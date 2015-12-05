@@ -8,11 +8,6 @@ puts ENV["RACK_ENV"]
 
 Bundler.require(:default, ENV["RACK_ENV"].to_sym)
 
-configuration = YAML::load_file('./config/configuration.yml')[ENV["RACK_ENV"]]
-
-DIR_LOCATION = configuration['dir_location']
-BASE_URL = configuration['base_url']
-
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   OS_PLATFORM = :windows
 elsif  (/darwin/ =~ RUBY_PLATFORM) != nil
@@ -37,10 +32,6 @@ module BSON
       to_s.as_json
     end
   end
-end
-
-configure do
-  Mongoid.load!('./config/mongoid.yml', :development)
 end
 
 configure :development do
