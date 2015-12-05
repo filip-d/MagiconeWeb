@@ -21,7 +21,8 @@ module Magicone
     end
 
     get "/resolve" do
-      sound = ["dentist", "waterfall", "sirens"].sample
+      fakeSoundIndex =  params[:azimuth].to_i / (360/3)
+      sound = ["dentist", "waterfall", "sirens"][fakeSoundIndex]
       {:test => sound}.to_json
     end
 
