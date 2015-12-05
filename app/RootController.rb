@@ -20,6 +20,11 @@ module Magicone
       erb :index
     end
 
+    get "/resolve" do
+      sound = ["dentist", "waterfall", "sirens"].sample
+      {:test => sound}.to_json
+    end
+
     def self.new(*)
       super
     end
