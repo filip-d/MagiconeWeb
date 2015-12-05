@@ -21,9 +21,16 @@ module Magicone
     end
 
     get "/resolve" do
+      content_type :json
       fakeSoundIndex =  params[:azimuth].to_i / (360/3)
       sound = ["dentist", "waterfall", "sirens"][fakeSoundIndex]
       {:test => sound}.to_json
+    end
+
+    get "/placemap" do
+      #File.read(File.join('public', params[:place]+'.json'))
+      content_type :json
+      File.read(File.join('public', 'london.json'))
     end
 
     def self.new(*)
