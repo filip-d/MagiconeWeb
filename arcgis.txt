@@ -1,0 +1,6 @@
+
+
+Advertising,Ashram,Banquet Hall,Border Crossing,Building,Business Facility,Cemetery,Church,City Hall,Civic Center,Convention Center,Court House,Dentist,Doctor,Embassy,Factory,Farm,Fire Station,Government Office,Hospital,Industrial Zone
+
+http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?singleLine=sea&category=Amusement+Park,Aquarium&outFields=PlaceName,Type,Place_Addr,City,Region,Country&maxLocations=10&forStorage=false&f=pjson
+

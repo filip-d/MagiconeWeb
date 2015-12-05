@@ -1,0 +1,7 @@
+development:
+  dir_location: C:/Users/filip/Dropbox/MagicHouse/content/
+  base_url: http://127.0.0.1:9292
+
+production:
+  dir_location: /home/filip/Dropbox/MagicHouse/content/
+  base_url: http://magichouse.fooropa.com
