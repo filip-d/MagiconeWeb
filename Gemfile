@@ -5,6 +5,7 @@ gem 'thin'
 gem 'sinatra'
 gem 'mongoid'
 gem 'newrelic_rpm'
+gem 'httparty'
 
 group :test do
     gem 'rspec'
